@@ -1,0 +1,23 @@
+{
+  "editor.trimAutoWhitespace": true,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "files.insertFinalNewline": true,
+
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "quietLight-plus-theme",
+
+  "editor.minimap.enabled": false,
+
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "window.zoomLevel": 0,
+  //   "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "git.enableSmartCommit": true,
+  "breadcrumbs.enabled": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "explorer.openEditors.visible": 0,
+  "workbench.statusBar.feedback.visible": false,
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": false
+}

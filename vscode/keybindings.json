@@ -1,0 +1,88 @@
+[
+  {
+    "key": "alt+shift+[",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "alt+shift+]",
+    "command": "workbench.action.navigateRight"
+  },
+  { "key": "ctrl+a", "command": "cursorHome" },
+  {
+    "key": "ctrl+shift+a",
+    "command": "cursorHomeSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "cursorRightSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "cursorLeftSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "cursorUpSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "cursorDownSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "cursorEndSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+f",
+    "command": "cursorWordEndRight",
+    "when": "editorTextFocus"
+  },
+  { "key": "alt+b", "command": "cursorWordEndLeft", "when": "editorTextFocus" },
+  {
+    "key": "alt+shift+f",
+    "command": "cursorWordEndRightSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+shift+b",
+    "command": "cursorWordEndLeftSelect",
+    "when": "editorTextFocus"
+  },
+
+  {
+    "key": "cmd+enter",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "enter",
+    "command": "list.select",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "cmd+'",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "cmd+\\",
+    "command": "-workbench.action.splitEditor"
+  }
+]
+
