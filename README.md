@@ -123,7 +123,7 @@ end
 " GIT
 augroup git_settings
   autocmd!
-  autocmd FileType gitcommit set spell 
+  autocmd FileType gitcommit set spell
 augroup END
 
 " MISC
@@ -162,34 +162,6 @@ call plug#end()
 ```
 Restart Vim, call `:PlugInstall` and restart Vim again.
 
-The Base16-Shell script updates  `~/.vimrc_background`  each time it is called. This file contains an instruction that sets the Vim `colorscheme` to the same one set in the shell. 
-
-Base16-Vim adds all the base16 colorschemes to Vim.
-
-Make Vim read this file by adding the following to `~/.vimrc`:
-```vim
-if filereadable(expand(“~/.vimrc_background”))
-  let base16colorspace=256
-  source ~/.vimrc_background
-endif
-```
-
-At the time of writing Base16Vim isn’t compatible with `Vim 8.1.1150`. Fix it by following these instructions [Vim 8.1 (1-899): Illegal Variable Name a:attr, a:guisp · Issue #197 · chriskempson/base16-vim · GitHub](https://github.com/chriskempson/base16-vim/issues/197#issuecomment-472710118)
-
-Summarised:
-```bash
-cd ~/.vim/plugged/base-16-vim
-git remote add dict_fix https://github.com/danielwe/base16-vim
-git pull dict_fix master:dictfix
-git checkout dictfix
-```
-
-Eventually the master branch of Base16Vim will hopefully be working again, at that time do:
-```bash
-git checkout origin/master
-git remote remove dict_fix
-```
-
 ### Install NERDTree
 Update `~/.vimrc` to include:
 ```vim
@@ -206,53 +178,5 @@ NERDTree sets  `cursorline` in its buffer, some themes, specifically the base16 
 hi CursorLine gui=NONE cterm=NONE guibg=Gray ctermbg=Gray
 ```
 
-Figure out which colors are available with using: `:h cterm-colors` or `:h gui-colors`. `
-
-## Set up Tmux
-Tmux has a server, restart the damn thing to reload it’s config file. `tmux kill-server`
-
-Stick this in `~/.tmux.conf` to enable proper color support:
-```config
-set -g terminal-overrides ",xterm-256color:Tc" # colors
-set -g default-terminal "screen-256color" # colors
-```
-
-Stick this in `~/.bash_profile` to enable utf-8 support:
-```bash
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-```
-
-### Configure Its looks
-To make the Tmux status-line look more like the vim tab-line, add the following to `~/.tmux.conf` (notice how Tmux wants color to be spelled the British way)
-```config
-set -g status-left ""
-set -g status-right ""
-
-set -g status-bg "colour252"
-set -g status-fg "colour7"
-
-set -g window-status-current-format "#[fg=colour10] #I #W "
-set -g window-status-format "#I #W "
-```
-
-If you want to get fancy, run the following to see all the colors available to Tmux:
-```bash
-for i in {0..255}; do
-    printf "\x1b[38;5;${i}mcolour${i}\x1b[0m\n"
-done
-```
-## Use Tmux
-Tmux calls tabs windows. The open windows are listed in the bottom bar.
-Tmux commands take the form of `prefix + key`, the default prefix is `C-b`, or ctrl + b.
-
-Create a new window with `C-b + c`
-
-List windows with `C-b + w`
-The window-list can be navigated with `j` and `k`, select one with `<CR>` (enter)
-
-Rename a window with `C-b + ,`
-
-Switch to a window with `C-b <number>`
-
-
+### Install FZF and Ag
+- use brew, also install https://github.com/junegunn/fzf.vim
