@@ -8,7 +8,6 @@
 - VSCode
   - See ./vscode/README.md
 
-
 ## Set up git with Github credentials
 
 `git config --global user.name "name surname"`

@@ -8,6 +8,8 @@ call plug#begin()
   Plug 'leafgarland/typescript-vim'
   Plug '/usr/local/opt/fzf'
   Plug 'junegunn/fzf.vim'
+  "Plug 'slim-template/vim-slim'
+  Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " IMPORTANT
@@ -74,6 +76,7 @@ nnoremap <leader>t :tabnew<CR>
 nnoremap <leader>o :tabonly<CR>
 
 " SEARCH HIGHLIGHT
+set hlsearch
 nnoremap <leader>h :noh<CR>
 
 " BUFFERS
@@ -86,4 +89,17 @@ map <leader>n :NERDTreeToggle<CR>
 
 " FZF
 map <leader>p :FZF<CR>
-map <leader>f :Ag<CR>
+map <leader>f :NERDTreeFind<CR>
+
+" MISC
+nnoremap <leader>c :let @+ = expand("%")<CR>
+
+" REMOVE WHITESPACE
+" autocmd BufWritePre * %s/\s\+$//e
+
+set synmaxcol=128
+syntax sync minlines=256
+
+nnoremap <leader>b Abinding.pry<esc>
+
+
