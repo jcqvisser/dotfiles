@@ -162,7 +162,7 @@
   "when": "editorTextFocus"
 },
 {
-  "key": "ctrl+cmd+n",
+  "key": "alt+cmd+n",
   "command": "editor.action.moveLinesDownAction",
   "when": "editorTextFocus && !editorReadonly"
 },
@@ -172,7 +172,7 @@
   "when": "editorTextFocus && !editorReadonly"
 },
 {
-  "key": "ctrl+cmd+p",
+  "key": "alt+cmd+p",
   "command": "editor.action.moveLinesUpAction",
   "when": "editorTextFocus && !editorReadonly"
 },
