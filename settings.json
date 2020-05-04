@@ -1,0 +1,49 @@
+{
+    "editor.trimAutoWhitespace": true,
+    "editor.insertSpaces": true,
+    "files.insertFinalNewline": true,
+    "editor.minimap.enabled": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "window.zoomLevel": 0,
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
+    "git.enableSmartCommit": true,
+    "breadcrumbs.enabled": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "explorer.openEditors.visible": 0,
+    "workbench.statusBar.feedback.visible": false,
+    "zenMode.centerLayout": false,
+    "zenMode.fullScreen": false,
+    "workbench.colorTheme": "quietLight-plus-theme",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.tabSize": 2,
+    "gitlens.currentLine.enabled": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.trimTrailingWhitespace": true,
+    "go.useLanguageServer": true,
+    "go.buildOnSave": "workspace",
+    "alignment.surroundSpace": {
+      "colon": [
+        -1,
+        1
+      ],
+      "assignment": [
+        1,
+        1
+      ],
+      "arrow": [
+        1,
+        1
+      ],
+      "comment": 2
+    },
+    "omnisharp.useEditorFormattingSettings": false,
+    "[markdown]": {
+      "editor.defaultFormatter": "fcrespo82.markdown-table-formatter"
+    }
+}
