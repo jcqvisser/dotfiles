@@ -42,5 +42,8 @@
       ],
       "comment": 2
     },
-    "omnisharp.useEditorFormattingSettings": false
+    "omnisharp.useEditorFormattingSettings": false,
+    "[markdown]": {
+      "editor.defaultFormatter": "fcrespo82.markdown-table-formatter"
+    }
 }
