@@ -184,5 +184,13 @@
 {
   "key": "ctrl+shift+'",
   "command": "workbench.action.terminal.focusNext"
+},
+{
+  "key": "shift+cmd+'",
+  "command": "workbench.action.terminal.new"
+},
+{
+  "key": "ctrl+shift+`",
+  "command": "-workbench.action.terminal.new"
 }
 ]
