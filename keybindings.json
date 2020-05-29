@@ -180,5 +180,9 @@
   "key": "alt+up",
   "command": "-editor.action.moveLinesUpAction",
   "when": "editorTextFocus && !editorReadonly"
+},
+{
+  "key": "ctrl+shift+'",
+  "command": "workbench.action.terminal.focusNext"
 }
 ]
