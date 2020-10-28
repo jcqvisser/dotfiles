@@ -1,49 +1,96 @@
 {
-    "editor.trimAutoWhitespace": true,
-    "editor.insertSpaces": true,
-    "files.insertFinalNewline": true,
-    "editor.minimap.enabled": false,
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "window.zoomLevel": 0,
-    "javascript.implicitProjectConfig.experimentalDecorators": true,
-    "git.enableSmartCommit": true,
-    "breadcrumbs.enabled": false,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "explorer.openEditors.visible": 0,
-    "workbench.statusBar.feedback.visible": false,
-    "zenMode.centerLayout": false,
-    "zenMode.fullScreen": false,
-    "workbench.colorTheme": "quietLight-plus-theme",
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.tabSize": 2,
-    "gitlens.currentLine.enabled": false,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "files.trimTrailingWhitespace": true,
-    "go.useLanguageServer": true,
-    "go.buildOnSave": "workspace",
-    "alignment.surroundSpace": {
-      "colon": [
-        -1,
-        1
-      ],
-      "assignment": [
-        1,
-        1
-      ],
-      "arrow": [
-        1,
-        1
-      ],
-      "comment": 2
-    },
-    "omnisharp.useEditorFormattingSettings": false,
-    "[markdown]": {
-      "editor.defaultFormatter": "fcrespo82.markdown-table-formatter"
-    }
+  "editor.trimAutoWhitespace": true,
+  "editor.insertSpaces": true,
+  "files.insertFinalNewline": true,
+  "editor.minimap.enabled": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "window.zoomLevel": 0,
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "git.enableSmartCommit": true,
+  "breadcrumbs.enabled": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "explorer.openEditors.visible": 0,
+  "workbench.colorTheme": "quietLight-plus-theme",
+  "editor.tabSize": 2,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "files.trimTrailingWhitespace": true,
+  "liveshare.presence": true,
+  "cSpell.enabled": true,
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "git-commit",
+    "go",
+    "handlebars",
+    "haskell",
+    "html",
+    "jade",
+    "java",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "python",
+    "pug",
+    "restructuredtext",
+    "rust",
+    "scala",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "yaml",
+    "yml",
+    "ruby"
+  ],
+  "cSpell.userWords": [
+    "CONCAT",
+    "Kredit",
+    "Unprocessable",
+    "constantize",
+    "deserialization",
+    "formularies",
+    "klass",
+    "numericality",
+    "postgres",
+    "postgresql",
+    "resave",
+    "typeorm"
+  ],
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "yaml.validate": false,
+  "yaml.format.enable": true,
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.slim": "slim"
+  }
 }

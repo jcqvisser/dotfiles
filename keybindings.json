@@ -1,12 +1,5 @@
 [
-  {
-    "key": "alt+shift+[",
-    "command": "workbench.action.navigateLeft"
-  },
-  {
-    "key": "alt+shift+]",
-    "command": "workbench.action.navigateRight"
-  },
+  // emacs-y text navigation
   { "key": "ctrl+a", "command": "cursorHome" },
   {
     "key": "ctrl+shift+a",
@@ -55,6 +48,7 @@
     "when": "editorTextFocus"
   },
 
+  // Explorer
   {
     "key": "cmd+enter",
     "command": "renameFile",
@@ -62,135 +56,89 @@
   },
   {
     "key": "enter",
-    "command": "-renameFile",
-    "when": "explorerViewletVisible && filesExplorerFocus"
-  },
-  {
-    "key": "enter",
     "command": "list.select",
     "when": "explorerViewletVisible && filesExplorerFocus"
   },
-
   {
     "key": "cmd+n",
     "command": "explorer.newFile",
     "when": "explorerViewletVisible && filesExplorerFocus"
   },
+
+  // Tab navigation
   {
     "key": "cmd+'",
     "command": "workbench.action.splitEditor"
   },
   {
-    "key": "cmd+\\",
-    "command": "-workbench.action.splitEditor"
-},
-{
+    "key": "alt+shift+[",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "alt+shift+]",
+    "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "shift+alt+cmd+]",
+    "command": "workbench.action.moveEditorRightInGroup"
+  },
+  {
+    "key": "shift+alt+cmd+]",
+    "command": "-workbench.action.moveEditorRightInGroup"
+  },
+  {
+    "key": "shift+alt+cmd+[",
+    "command": "workbench.action.moveEditorLeftInGroup"
+  },
+  {
+    "key": "shift+alt+cmd+[",
+    "command": "-workbench.action.moveEditorLeftInGroup"
+  },
+
+  // multi-cursor
+  {
+    "key": "alt+cmd+n",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+p",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+
+  // terminal panel stuff
+  {
+    "key": "ctrl+cmd+'",
+    "command": "workbench.action.focusPanel",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+cmd+'",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "!editorFocus"
+  },
+  {
     "key": "ctrl+'",
     "command": "workbench.action.terminal.toggleTerminal"
-},
-{
-    "key": "ctrl+`",
-    "command": "-workbench.action.terminal.toggleTerminal"
-},
-{
+  },
+  {
+    "key": "ctrl+shift+'",
+    "command": "workbench.action.terminal.focusNext"
+  },
+  {
+    "key": "shift+cmd+'",
+    "command": "workbench.action.terminal.new"
+  },
+
+  // misc
+  {
     "key": "shift+alt+cmd+c",
     "command": "copyRelativeFilePath"
-},
-{
+  },
+  {
     "key": "shift+alt+cmd+c",
     "command": "-copyRelativeFilePath",
     "when": "!editorFocus"
-},
-{
-  "key": "shift+alt+cmd+]",
-  "command": "workbench.action.moveEditorRightInGroup"
-},
-{
-  "key": "cmd+k shift+cmd+right",
-  "command": "-workbench.action.moveEditorRightInGroup"
-},
-{
-  "key": "shift+alt+cmd+[",
-  "command": "workbench.action.moveEditorLeftInGroup"
-},
-{
-  "key": "cmd+k shift+cmd+left",
-  "command": "-workbench.action.moveEditorLeftInGroup"
-},
-{
-  "key": "ctrl+alt+'",
-  "command": "workbench.action.togglePanelPosition"
-},
-{
-  "key": "ctrl+cmd+'",
-  "command": "workbench.action.focusPanel",
-  "when": "editorTextFocus"
-},
-{
-  "key": "ctrl+cmd+'",
-  "command": "workbench.action.focusActiveEditorGroup",
-  "when": "!editorFocus"
-},
-{
-  "key": "alt+cmd+n",
-  "command": "editor.action.insertCursorBelow",
-  "when": "editorTextFocus"
-},
-{
-  "key": "alt+cmd+down",
-  "command": "-editor.action.insertCursorBelow",
-  "when": "editorTextFocus"
-},
-{
-  "key": "shift+alt+cmd+p",
-  "command": "keybindings.editor.toggleSortByPrecedence",
-  "when": "inKeybindings"
-},
-{
-  "key": "alt+cmd+p",
-  "command": "-keybindings.editor.toggleSortByPrecedence",
-  "when": "inKeybindings"
-},
-{
-  "key": "alt+cmd+p",
-  "command": "editor.action.insertCursorAbove",
-  "when": "editorTextFocus"
-},
-{
-  "key": "alt+cmd+up",
-  "command": "-editor.action.insertCursorAbove",
-  "when": "editorTextFocus"
-},
-{
-  "key": "ctrl+alt+n",
-  "command": "editor.action.moveLinesDownAction",
-  "when": "editorTextFocus && !editorReadonly"
-},
-{
-  "key": "alt+down",
-  "command": "-editor.action.moveLinesDownAction",
-  "when": "editorTextFocus && !editorReadonly"
-},
-{
-  "key": "ctrl+alt+p",
-  "command": "editor.action.moveLinesUpAction",
-  "when": "editorTextFocus && !editorReadonly"
-},
-{
-  "key": "alt+up",
-  "command": "-editor.action.moveLinesUpAction",
-  "when": "editorTextFocus && !editorReadonly"
-},
-{
-  "key": "ctrl+shift+'",
-  "command": "workbench.action.terminal.focusNext"
-},
-{
-  "key": "shift+cmd+'",
-  "command": "workbench.action.terminal.new"
-},
-{
-  "key": "ctrl+shift+`",
-  "command": "-workbench.action.terminal.new"
-}
+  }
 ]
