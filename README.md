@@ -7,6 +7,11 @@
 - Vim via homebrew
 - VSCode
   - See ./vscode/README.md
+- postgres.app
+- meetingbar
+- lightroom & photoshop
+- vim + plug + fzf
+
 
 ## Set up git with Github credentials
 
