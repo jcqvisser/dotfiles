@@ -4,7 +4,7 @@
 call plug#begin()
   Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
   Plug 'tpope/vim-sensible'
-  Plug 'nightsense/snow'
+  "Plug 'nightsense/snow'
   Plug 'leafgarland/typescript-vim'
   Plug '/usr/local/opt/fzf'
   Plug 'junegunn/fzf.vim'
@@ -60,7 +60,8 @@ let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
 let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
 set termguicolors
 set term=xterm-256color
-colorscheme snow
+set fillchars+=vert:\ 
+" colorscheme snow
 
 " SHORTCUTS
 let mapleader = "\<Space>"
