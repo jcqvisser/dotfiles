@@ -1,65 +1,123 @@
 {
-    "editor.trimAutoWhitespace": true,
-    "editor.insertSpaces": true,
-    "files.insertFinalNewline": true,
-    "editor.minimap.enabled": false,
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "javascript.implicitProjectConfig.experimentalDecorators": true,
-    "git.enableSmartCommit": true,
-    "breadcrumbs.enabled": false,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "explorer.openEditors.visible": 0,
-    "workbench.statusBar.feedback.visible": false,
-    "zenMode.centerLayout": false,
-    "zenMode.fullScreen": false,
-    "workbench.colorTheme": "quietLight-plus-theme",
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.trimAutoWhitespace": true,
+  "editor.insertSpaces": true,
+  "files.insertFinalNewline": true,
+  "editor.minimap.enabled": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "git.enableSmartCommit": true,
+  "breadcrumbs.enabled": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "explorer.openEditors.visible": 0,
+  "workbench.statusBar.feedback.visible": false,
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "editor.tabSize": 2,
+  "gitlens.currentLine.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "files.trimTrailingWhitespace": true,
+  "go.useLanguageServer": true,
+  "go.buildOnSave": "workspace",
+  "alignment.surroundSpace": {
+    "colon": [-1, 1],
+    "assignment": [1, 1],
+    "arrow": [1, 1],
+    "comment": 2
+  },
+  "omnisharp.useEditorFormattingSettings": false,
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.startupEditor": "none",
+  "explorer.confirmDragAndDrop": false,
+  "redhat.telemetry.enabled": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "cSpell.userWords": ["Frontmatter", "PASSLISTED", "passlist"],
+  "screencastMode.keyboardOverlayTimeout": 2500,
+  "screencastMode.verticalOffset": 0,
+  "workbench.iconTheme": "Monokai Pro Icons",
+  "workbench.colorTheme": "quietLight-plus-theme",
+  "editor.fontFamily": "Fira Code Retina, Menlo, Monaco, 'Courier New', monospace",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "terminal.integrated.fontSize": 13,
+  "editor.fontSize": 13,
+  "editor.fontLigatures": true,
+  "editor.codeActionsOnSave": {
+    // "source.organizeImpor ts": true
+  },
+  "ruby.useBundler": true, //run non-lint commands with bundle exec
+  "ruby.useLanguageServer": true, // use the internal language server (see below)
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": true // enable rubocop via bundler
     },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.tabSize": 2,
-    "gitlens.currentLine.enabled": false,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "files.trimTrailingWhitespace": true,
-    "go.useLanguageServer": true,
-    "go.buildOnSave": "workspace",
-    "alignment.surroundSpace": {
-      "colon": [
-        -1,
-        1
-      ],
-      "assignment": [
-        1,
-        1
-      ],
-      "arrow": [
-        1,
-        1
-      ],
-      "comment": 2
-    },
-    "omnisharp.useEditorFormattingSettings": false,
-    "[markdown]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+    "reek": {
+      "useBundler": true // enable reek via bundler
+    }
+  },
+  "ruby.format": "rubocop", // use rubocop for formatting
+
+  // Causes the debug view to automatically appear when a breakpoint is hit. This
+  // setting is global and not configurable per-language.
+  "debug.openDebug": "openOnDebugBreak",
+
+  "[dart]": {
+    // Automatically format code on save and during typing of certain characters
+    // (like `;` and `}`).
     "editor.formatOnSave": true,
-    "[html]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "workbench.editor.untitled.hint": "hidden",
-    "workbench.startupEditor": "none",
-    "explorer.confirmDragAndDrop": false,
-    "redhat.telemetry.enabled": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "cSpell.userWords": [
-      "Frontmatter"
-    ],
-    "screencastMode.keyboardOverlayTimeout": 2500,
-    "screencastMode.verticalOffset": 0
+    "editor.formatOnType": true,
+
+    // Draw a guide line at 80 characters, where Dart's formatting will wrap code.
+    "editor.rulers": [80],
+
+    // Disables built-in highlighting of words that match your selection. Without
+    // this, all instances of the selected text will be highlighted, interfering
+    // with Dart's ability to highlight only exact references to the selected variable.
+    "editor.selectionHighlight": false,
+
+    // By default, VS Code prevents code completion from popping open when in
+    // "snippet mode" (editing placeholders in inserted code). Setting this option
+    // to `false` stops that and allows completion to open as normal, as if you
+    // weren't in a snippet placeholder.
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+
+    // By default, VS Code will pre-select the most recently used item from code
+    // completion. This is usually not the most relevant item.
+    //
+    // "first" will always select top item
+    // "recentlyUsedByPrefix" will filter the recently used items based on the
+    //     text immediately preceding where completion was invoked.
+    "editor.suggestSelection": "first",
+
+    // Allows pressing <TAB> to complete snippets such as `for` even when the
+    // completion list is not visible.
+    "editor.tabCompletion": "onlySnippets",
+
+    // By default, VS Code will populate code completion with words found in the
+    // current file when a language service does not provide its own completions.
+    // This results in code completion suggesting words when editing comments and
+    // strings. This setting will prevent that.
+    "editor.wordBasedSuggestions": false
+  },
+  "debug.javascript.autoAttachFilter": "disabled",
+  "eslint.lintTask.enable": true,
+  "js/ts.implicitProjectConfig.checkJs": true
 }
