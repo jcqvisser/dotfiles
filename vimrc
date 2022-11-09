@@ -89,6 +89,7 @@ nnoremap <leader>bd :bd<CR>
 map <leader>n :NERDTreeToggle<CR>
 
 " FZF
+set rtp+=/usr/local/opt/fzf
 map <leader>p :FZF<CR>
 map <leader>f :NERDTreeFind<CR>
 
