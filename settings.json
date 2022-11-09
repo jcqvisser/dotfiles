@@ -5,92 +5,107 @@
   "editor.minimap.enabled": false,
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "window.zoomLevel": 0,
-  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
   "git.enableSmartCommit": true,
   "breadcrumbs.enabled": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "explorer.openEditors.visible": 0,
-  "workbench.colorTheme": "quietLight-plus-theme",
-  "editor.tabSize": 2,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "files.trimTrailingWhitespace": true,
-  "liveshare.presence": true,
-  "cSpell.enabled": true,
-  "cSpell.enabledLanguageIds": [
-    "asciidoc",
-    "c",
-    "cpp",
-    "csharp",
-    "css",
-    "git-commit",
-    "go",
-    "handlebars",
-    "haskell",
-    "html",
-    "jade",
-    "java",
-    "javascript",
-    "javascriptreact",
-    "json",
-    "jsonc",
-    "latex",
-    "less",
-    "markdown",
-    "php",
-    "plaintext",
-    "python",
-    "pug",
-    "restructuredtext",
-    "rust",
-    "scala",
-    "scss",
-    "text",
-    "typescript",
-    "typescriptreact",
-    "yaml",
-    "yml",
-    "ruby"
-  ],
-  "cSpell.userWords": [
-    "CONCAT",
-    "Kredit",
-    "Unprocessable",
-    "constantize",
-    "deserialization",
-    "formularies",
-    "klass",
-    "numericality",
-    "postgres",
-    "postgresql",
-    "resave",
-    "typeorm"
-  ],
-  "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": false,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "editor.tabSize": 2,
+  "files.trimTrailingWhitespace": true,
+
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "yaml.validate": false,
-  "yaml.format.enable": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "editor.formatOnSave": true,
-  "files.associations": {
-    "*.slim": "slim"
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.startupEditor": "none",
+  "explorer.confirmDragAndDrop": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "cSpell.userWords": [
+    "endregion",
+    "Frontmatter",
+    "Nuforce",
+    "passlist",
+    "PASSLISTED"
+  ],
+  "screencastMode.keyboardOverlayTimeout": 2500,
+  "screencastMode.verticalOffset": 0,
+  "workbench.iconTheme": "Monokai Pro Icons",
+  "workbench.colorTheme": "quietLight-plus-theme",
+  "editor.fontFamily": "Fira Code Retina, Menlo, Monaco, 'Courier New', monospace",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "terminal.integrated.fontSize": 13,
+  "editor.fontSize": 13,
+  "editor.fontLigatures": false,
+
+  // this is nice if everyone does it:
+  // "editor.codeActionsOnSave": {
+  //   "source.organizeImports": true
+  // },
+
+  // Causes the debug view to automatically appear when a breakpoint is hit. This
+  // setting is global and not configurable per-language.
+  "debug.openDebug": "openOnDebugBreak",
+
+  "debug.javascript.autoAttachFilter": "disabled",
+  "eslint.lintTask.enable": true,
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "git.confirmSync": false,
+  "redhat.telemetry.enabled": true,
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "yaml.validate": false,
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   }
 }
